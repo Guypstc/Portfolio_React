@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import HeadderImg from "../assets/image/Headder.png";
+import MouseFollower from "./Banner_Mouse";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "Web Designer"];
+  const toRotate = ["Web Developer", "React Developer", "PHP Developer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -65,11 +66,7 @@ export const Banner = () => {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img
-              src={HeadderImg}
-              className="responsive-img"
-              alt="Headder Img"
-            />
+            <MouseFollower />
           </Col>
         </Row>
       </Container>

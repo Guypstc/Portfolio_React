@@ -9,7 +9,7 @@ import navIcon2 from "../assets/icon/icon-instagram.png";
 import navIcon3 from "../assets/icon/icon-tiktok.png"; 
 
 
-const MyNavbar = () => {
+export const MyNavbar = () => {
     const [activelink, setActiveLink] = useState('home');
     const [scrolled, setScolled] = useState(false);
 
@@ -56,5 +56,3 @@ const MyNavbar = () => {
     </Navbar>
   );
 };
-
-export default MyNavbar;
