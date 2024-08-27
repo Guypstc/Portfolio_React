@@ -1,4 +1,4 @@
-## Installation And Libery
+## Installation And Liberry
 
 Install my-project with npm
 
