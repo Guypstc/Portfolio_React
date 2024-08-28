@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from "../assets/image/Logo-Web.png";
 import navIcon1 from "../assets/icon/icon-facebook.png";
 import navIcon2 from "../assets/icon/icon-instagram.png";
-import navIcon3 from "../assets/icon/icon-tiktok.png"; 
+import navIcon3 from "../assets/icon/icon-github.png"; 
 
 
 export const MyNavbar = () => {

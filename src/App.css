@@ -383,6 +383,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: auto;
   position: relative;
 }
+
+.skill-slider .react-multiple-carousel__slide {
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-slider .react-multiple-carousel__arrow {
+  transition: opacity 0.3s ease-in-out;
+}
+
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;

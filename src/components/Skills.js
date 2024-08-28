@@ -37,7 +37,7 @@ export const Skills = () => {
                                 Skills
                             </h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit non distinctio quae fugit qui eligendi neque, ullam dolore eaque labore sit cum necessitatibus, id quo itaque odio quos? Adipisci, dolorem.</p>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={5000} className="skill-slider">
                                 <div className="item">
                                     <img src={Frontend_img} alt="Image" />
                                     <h5>FrontEnd</h5>
@@ -56,7 +56,7 @@ export const Skills = () => {
                                 </div>
                                 <div className="item">
                                     <img src={Program_img} alt="Image" />
-                                    <h5>Program</h5>
+                                    <h5>Programing</h5>
                                 </div>
                             </Carousel>
                         </div>
