@@ -47,12 +47,14 @@ export const MyNavbar = () => {
             <div className="social-icon">
                 <a href="https://www.facebook.com/prasittichai.meaungthai/"><img src={navIcon1} alt="" /></a>
                 <a href="https://www.instagram.com/pstchai/?next=%2F"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.tiktok.com/@guy_pstc?lang=en"><img src={navIcon3} alt="" /></a>
+                <a href="https://github.com/Guypstc"><img src={navIcon3} alt="" /></a>
             </div>
             <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+            
           </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 };
+

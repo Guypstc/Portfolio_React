@@ -7,13 +7,35 @@
 html, body {
   height: 100%;
   margin: 0;
+
 }
 
 body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background: linear-gradient(130deg, rgba(97, 87, 255, 1), rgba(238, 73, 253, 1)) !important;
+ 
+  background-image: linear-gradient(
+  50deg,
+  hsl(301deg 60% 38%) 0%,
+  hsl(301deg 52% 43%) 9%,
+  hsl(301deg 46% 48%) 16%,
+  hsl(301deg 45% 52%) 23%,
+  hsl(301deg 48% 57%) 29%,
+  hsl(279deg 50% 61%) 35%,
+  hsl(258deg 49% 64%) 40%,
+  hsl(236deg 46% 64%) 45%,
+  hsl(222deg 44% 59%) 50%,
+  hsl(222deg 42% 55%) 55%,
+  hsl(222deg 40% 50%) 60%,
+  hsl(222deg 46% 46%) 65%,
+  hsl(222deg 54% 41%) 70%,
+  hsl(222deg 56% 34%) 77%,
+  hsl(223deg 59% 27%) 83%,
+  hsl(223deg 66% 20%) 91%,
+  hsl(222deg 80% 14%) 100%
+) !important;
+
 }
 
 body::before {
@@ -359,6 +381,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-bx {
   background-color: #151515;
   border-radius: 64px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.19);
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
@@ -401,6 +424,106 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   bottom: 0;
   width: 100%;
+  z-index: -4;
+}
+/* ProJect */
+.project {
+  backdrop-filter: blur(25px) saturate(152%);
+  -webkit-backdrop-filter: blur(25px) saturate(152%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.project h2 {
+  color: #fff;
+  padding-top: 25px;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+.project p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+.project .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.proj-imgbx {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  width: 100%;  /* ทำให้การ์ดครอบคลุมเต็มความกว้างของคอลัมน์ */
+  max-width: 350px;  /* ตั้งขนาดสูงสุดของการ์ดเพื่อควบคุมความกว้าง */
+  height: 250px;  /* ตั้งค่าความสูง */
+  object-fit: cover;  /* ทำให้รูปภาพถูกครอบให้พอดีกับการ์ด */
+  transition: transform 0.3s ease;
+}
+
+.proj-imgbx img {
+  width: 100%;  /* ทำให้รูปภาพครอบคลุมการ์ด */
+  height: 100%;  /* ทำให้รูปภาพครอบคลุมการ์ด */
+  object-fit: cover;  /* ทำให้ภาพครอบคลุมทั้งพื้นที่โดยไม่เสียอัตราส่วน */
+}
+
+.proj-imgbx:hover {
+  transform: scale(1.05);  /* ซูมเข้าเล็กน้อยเมื่อ hover */
+}
+
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%; 
+}
+.proj-imgbx:hover .proj-txtx {
+  color: #ffffff;
+  top: 50%;
+  opacity: 1;
+}
+
+.proj-txtx h4 {
+  font-size: 24px;  /* ปรับขนาดฟอนต์เพื่อให้เข้ากับขนาดการ์ด */
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   z-index: -4;
 }
 
