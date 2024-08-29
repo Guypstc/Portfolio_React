@@ -14,40 +14,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
- 
-  background-image: linear-gradient(
-  50deg,
-  hsl(301deg 60% 38%) 0%,
-  hsl(301deg 52% 43%) 9%,
-  hsl(301deg 46% 48%) 16%,
-  hsl(301deg 45% 52%) 23%,
-  hsl(301deg 48% 57%) 29%,
-  hsl(279deg 50% 61%) 35%,
-  hsl(258deg 49% 64%) 40%,
-  hsl(236deg 46% 64%) 45%,
-  hsl(222deg 44% 59%) 50%,
-  hsl(222deg 42% 55%) 55%,
-  hsl(222deg 40% 50%) 60%,
-  hsl(222deg 46% 46%) 65%,
-  hsl(222deg 54% 41%) 70%,
-  hsl(222deg 56% 34%) 77%,
-  hsl(223deg 59% 27%) 83%,
-  hsl(223deg 66% 20%) 91%,
-  hsl(222deg 80% 14%) 100%
-) !important;
-
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(130deg, rgba(97, 87, 255, 0.5), rgba(238, 73, 253, 0.5));
-  backdrop-filter: blur(10px); 
-  z-index: -1; 
+  background-color: black !important; /* เปลี่ยนเป็นสีดำเรียบ */
 }
 h1, h2, h3, h4, h5 {
   margin: 0;
@@ -249,7 +216,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: left; 
+  text-align: left;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px; /* ความสูงของเอฟเฟกต์เบลอ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 .banner .tagline {
   color: #fff;
@@ -381,7 +359,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-bx {
   background-color: #151515;
   border-radius: 64px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2), 0 0 50px rgba(255, 255, 255, 0.19);
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
