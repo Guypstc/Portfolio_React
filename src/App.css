@@ -38,7 +38,6 @@ nav.navbar.scrolled {
   background-color: rgba(18, 18, 18, 0.5);
   backdrop-filter: blur(10px); /* เอฟเฟกต์เบลอ */
   -webkit-backdrop-filter: blur(10px); /* สำหรับเบราว์เซอร์ที่รองรับ */
-  border-radius: 0 0 15px 15px; /* โค้งเฉพาะด้านล่าง */
 }
 
 nav.navbar a.navbar-brand {
@@ -356,10 +355,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /* Skils */
 .skill {
-
   padding: 150px 0 110px 0;
   position: relative;
 }
+
 .skill-bx {
   background-color: #151515;
   border-radius: 64px;
@@ -368,14 +367,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
 }
+
 .skill h2 {
   color: #fff;
   font-size: 45px;
   font-weight: 700;
 }
-.skill h5 {
-  color: #b8b8b8;
-}
+
 .skill p {
   color: #b8b8b8;
   font-size: 18px;
@@ -383,31 +381,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px 0 75px 0;
 }
-.skill-slider {
-  width: 80%;
-  margin: auto;
-  position: relative;
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* ปรับขนาดการ์ด */
+  gap: 20px; /* ระยะห่างระหว่างการ์ด */
+  justify-content: center;
 }
 
-.skill-slider .react-multiple-carousel__slide {
+.skill-card {
+  background-color: #212121 !important;
   transition: transform 0.3s ease-in-out;
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+  border-radius: 15px !important;
 }
 
-.skill-slider .react-multiple-carousel__arrow {
-  transition: opacity 0.3s ease-in-out;
+.skill-card:hover {
+  transform: translate(0, -10px);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2), 0 0 25px rgba(255, 255, 255, 0.19);
 }
 
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+.skill-card img {
+  width: 60%;
+  margin: 0 auto;
 }
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  z-index: -4;
+
+.skill-title {
+  color: #fff !important;
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 10px;
+  margin-top: 15px;
 }
+
 /* ProJect */
 .project {
   backdrop-filter: blur(25px) saturate(152%);

@@ -13,7 +13,6 @@ function App() {
       <Banner />
       <Skills />
       <Project />
-  
     </div>
   );
 }
