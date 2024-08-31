@@ -372,14 +372,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   font-size: 45px;
   font-weight: 700;
-}
-
-.skill p {
-  color: #b8b8b8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px 0 75px 0;
+  margin: 0px 0 30px 0;
+}
+.skill p {
+  line-height: -50px;
 }
 
 .skills-grid {
@@ -394,8 +391,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: transform 0.3s ease-in-out;
   text-align: center;
   padding: 20px;
-  width: 200px;
+  width: 200px; /* ขนาดการ์ดคงที่ */
+  height: 300px; /* ความสูงคงที่ของการ์ด */
   border-radius: 15px !important;
+  position: relative; /* ตั้งค่าตำแหน่งสัมพัทธ์ของการ์ด */
+  overflow: hidden; /* ซ่อนเนื้อหาที่ล้นออกจากการ์ด */
 }
 
 .skill-card:hover {
@@ -404,6 +404,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-card img {
+  padding-top: 5px !important;
   width: 60%;
   margin: 0 auto;
 }
@@ -412,8 +413,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff !important;
   font-size: 24px;
   font-weight: 600;
-  padding-top: 10px;
-  margin-top: 15px;
+  margin-bottom: 30px !important; /* ปรับระยะห่างด้านล่างของ title */
+}
+
+.skill-desc {
+  color: #fff;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute; /* ใช้ตำแหน่งสัมพัทธ์ */
+  bottom: 20px; /* ระยะห่างจากด้านล่างของการ์ด */
+  left: 50%;
+  transform: translateX(-50%); /* จัดตำแหน่งให้อยู่กลางการ์ด */
+  width: 90%; /* กำหนดความกว้างของ description */
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
+  padding-top: 30px !important; /* เพิ่มระยะห่างด้านบน */
+}
+
+.skill-card:hover .skill-desc {
+  opacity: 1;
 }
 
 /* ProJect */

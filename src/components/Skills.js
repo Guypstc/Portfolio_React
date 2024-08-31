@@ -7,7 +7,7 @@ import img_js from '../assets/image/js.png';
 import img_react from '../assets/image/react.png';
 import img_boots from '../assets/image/bootstrap.png';
 import img_php from '../assets/image/php.png';
-import img_node from '../assets/image/node.png';
+import img_node from '../assets/image/node-js.png';
 import img_sql from '../assets/image/sql.png';
 import img_c from '../assets/image/c++.png';
 import img_java from '../assets/image/java.png';
@@ -15,15 +15,15 @@ import img_java from '../assets/image/java.png';
 export const Skills = () => {
     const skills = [
         { img: img_css, title: "CSS", des: "Advance" },
-        { img: img_html, title: "HTML" },
-        { img: img_js, title: "Javascript" },
-        { img: img_react, title: "React" },
-        { img: img_boots, title: "Bootstrap" },
-        { img: img_php, title: "PHP" },
-        { img: img_node, title: "Node.js" },
-        { img: img_sql, title: "SQL" },
-        { img: img_c, title: "C++" },
-        { img: img_java, title: "Java" }
+        { img: img_html, title: "HTML", des: "Advance" },
+        { img: img_js, title: "Javascript", des: "Advance" },
+        { img: img_react, title: "React", des: "Advance" },
+        { img: img_boots, title: "Bootstrap", des: "Advance" },
+        { img: img_php, title: "PHP", des: "Advance" },
+        { img: img_node, title: "Node.js", des: "Basic" },
+        { img: img_sql, title: "SQL", des: "Advance" },
+        { img: img_c, title: "C++", des: "Basic" },
+        { img: img_java, title: "Java", des: "Basic" }
     ];
 
     return (
@@ -33,7 +33,6 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>Skills</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit non distinctio quae fugit qui eligendi neque, ullam dolore eaque labore sit cum necessitatibus.</p>
                             <Row className="skills-grid"> 
                                 {skills.map((skill, index) => (
                                     <Col key={index}  className="mb-4">
@@ -41,7 +40,7 @@ export const Skills = () => {
                                             <Card.Img variant="top" src={skill.img} />
                                             <Card.Body>
                                                 <Card.Title className="skill-title">{skill.title}</Card.Title>
-
+                                                <p className="skill-desc">{skill.des}</p>
                                             </Card.Body>
                                         </Card>
                                     </Col>
