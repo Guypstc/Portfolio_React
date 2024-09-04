@@ -33,6 +33,11 @@ nav.navbar {
   background-color: rgba(18, 18, 18, 0);
 }
 
+nav.navbar h2 {
+  color: #f9f8f8;
+  font-weight: 700;
+}
+
 nav.navbar.scrolled {
   padding: 0px 0; 
   background-color: rgba(18, 18, 18, 0.5);
@@ -391,6 +396,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: transform 0.3s ease-in-out;
   text-align: center;
   padding: 20px;
+  padding-bottom: 15px;
   width: 200px; /* ขนาดการ์ดคงที่ */
   height: 300px; /* ความสูงคงที่ของการ์ด */
   border-radius: 15px !important;
@@ -427,7 +433,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translateX(-50%); /* จัดตำแหน่งให้อยู่กลางการ์ด */
   width: 90%; /* กำหนดความกว้างของ description */
   text-align: center; /* จัดข้อความให้อยู่กลาง */
-  padding-top: 30px !important; /* เพิ่มระยะห่างด้านบน */
+  padding-top: 20px !important; /* เพิ่มระยะห่างด้านบน */
 }
 
 .skill-card:hover .skill-desc {
@@ -439,7 +445,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   backdrop-filter: blur(25px) saturate(152%);
   -webkit-backdrop-filter: blur(25px) saturate(152%);
   background-color: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.125);
+
 }
 .project h2 {
   color: #fff;

@@ -32,7 +32,7 @@ export const MyNavbar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
       <Navbar.Brand href="#home" className={activelink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>
-        <img src={Logo} width="50px" height="50px" alt="Logo" />
+        <h2>Portfolio</h2>
       </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>

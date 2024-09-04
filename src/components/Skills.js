@@ -11,19 +11,21 @@ import img_node from '../assets/image/node-js.png';
 import img_sql from '../assets/image/sql.png';
 import img_c from '../assets/image/c++.png';
 import img_java from '../assets/image/java.png';
+import img_tail from '../assets/image/tailwind_img.png';
 
 export const Skills = () => {
     const skills = [
         { img: img_css, title: "CSS", des: "Advance" },
         { img: img_html, title: "HTML", des: "Advance" },
         { img: img_js, title: "Javascript", des: "Advance" },
-        { img: img_react, title: "React", des: "Advance" },
+        { img: img_react, title: "React", des: "Intermediate" },
         { img: img_boots, title: "Bootstrap", des: "Advance" },
+        { img: img_tail, title: "Tailwind CSS", des: "Advance" },
         { img: img_php, title: "PHP", des: "Advance" },
-        { img: img_node, title: "Node.js", des: "Basic" },
-        { img: img_sql, title: "SQL", des: "Advance" },
-        { img: img_c, title: "C++", des: "Basic" },
-        { img: img_java, title: "Java", des: "Basic" }
+        { img: img_node, title: "Node.js", des: "Beginner" },
+        { img: img_sql, title: "SQL", des: "Intermediate" },
+        { img: img_c, title: "C++", des: "Beginner" },
+        { img: img_java, title: "Java", des: "Beginner" }
     ];
 
     return (
