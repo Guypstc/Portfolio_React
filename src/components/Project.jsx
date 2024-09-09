@@ -1,4 +1,8 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 import { Col, Container, Row } from 'react-bootstrap';
 import Image1 from '../assets/image/Img_pj1.png';
 import Image2 from '../assets/image/Img_pj3-1.png';
@@ -8,6 +12,12 @@ import colorSharp from '../assets/image/Bg_skills_img.png';
 import { ProjectCard } from './ProjectCard';
 
 export const Project = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // ระยะเวลาแอนิเมชัน (1 วินาที)
+          once: true, // ทำงานแค่ครั้งเดียวเมื่อ scroll ผ่าน
+        });
+      }, []);
     const projects = [
        
         {
@@ -32,11 +42,10 @@ export const Project = () => {
     return (
         <section className='project' id='projects'>
             <Container>
-                <Row>
+                <Row data-aos="fade-up">
                     <Col>
                         <h2>Projects</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit non distinctio quae fugit qui eligendi neque, ullam dolore eaque labore sit cum necessitatibus, id quo itaque odio quos? Adipisci, dolorem.</p>
-                        <Row>
+                        <Row className='row' data-aos="fade-up">
                             {
                                 projects.map((project, index) => {
                                     return (

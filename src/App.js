@@ -6,6 +6,7 @@ import { Skills } from "./components/Skills";
 import { Project } from "./components/Project";
 
 
+
 function App() {
   return (
     <div className="App">
